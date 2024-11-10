@@ -1,0 +1,94 @@
+{
+  "name": "root",
+  "height": 30,
+  "output": ["eDP-1"],
+  "modules-left":[
+    "cpu",
+    "memory",
+    "pulseaudio/slider",
+    "cava"
+  ],
+  "modules-center":[
+    "clock"
+  ],
+  "modules-right":[
+    "temperature",
+    "battery"
+  ],
+  "margin-bottom": -5,
+  "margin-left": 15,
+  "margin-right": 15,
+  "reload_style_on_change": true,
+  "spacing": 4,
+
+  // Modules Section
+
+  "temperature":{
+    "tooltip": false,
+    "states":{
+      "warning": 50,
+      "insane": 65
+    }
+  },
+
+  "memory":{
+    "format":" {used}%",
+    "states":{
+      "heavy":50,
+      "warning":65,
+      "insane": 80
+    }
+  },
+
+  "clock": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{:%H:%M}",
+    "format-alt": "{:%d %h %Y}"
+  },
+
+  // Battery
+  "battery":{
+    "format": "{capacity}%",
+    "format-alt": "{power} W",
+    "tooltip": true,
+    "tooltip-format": "{time}",
+    "states":{
+      "warning": 50,
+      "critical": 20
+    }
+  },
+
+  "cpu":{
+    "format": "<span color='purple'> </span>{usage}%",
+    "states":{
+      "warning": 60,
+      "critical":80,
+      "insane": 90
+    }
+  },
+
+  // cava config
+  "cava": {
+//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    }
+}
