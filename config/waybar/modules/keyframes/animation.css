@@ -1,0 +1,110 @@
+/* animation */
+
+/* @keyframes airFlow {
+  0% {
+      background-position: 100% 50%;
+  }
+  10% {
+      background-position: 90% 40%;
+  }
+  20% {
+      background-position: 80% 30%;
+  }
+  30% {
+      background-position: 70% 40%;
+  }
+  40% {
+      background-position: 60% 50%;
+  }
+  50% {
+      background-position: 50% 60%;
+  }
+  60% {
+      background-position: 40% 70%;
+  }
+  70% {
+      background-position: 30% 80%;
+  }
+  80% {
+      background-position: 20% 90%;
+  }
+  90% {
+      background-position: 10% 100%;
+  }
+  100% {
+      background-position: 0% 100%;
+  }
+} */
+
+
+@keyframes airFlow {
+  0% {
+      background-position: 0% 0%;
+  }
+  5% {
+      background-position: 15% 60%;
+  }
+  10% {
+      background-position: 30% 120%;
+  }
+  15% {
+      background-position: 45% 180%;
+  }
+  20% {
+      background-position: 60% 240%;
+  }
+  25% {
+      background-position: 75% 300%;
+  }
+  30% {
+      background-position: 90% 300%;
+  }
+  35% {
+      background-position: 105% 240%;
+  }
+  40% {
+      background-position: 120% 180%;
+  }
+  45% {
+      background-position: 135% 120%;
+  }
+  50% {
+      background-position: 150% 60%;
+  }
+  55% {
+      background-position: 165% 0%;
+  }
+  60% {
+      background-position: 180% -60%;
+  }
+  65% {
+      background-position: 195% -120%;
+  }
+  70% {
+      background-position: 210% -180%;
+  }
+  75% {
+      background-position: 225% -240%;
+  }
+  80% {
+      background-position: 240% -300%;
+  }
+  85% {
+      background-position: 255% -300%;
+  }
+  90% {
+      background-position: 270% -240%;
+  }
+  95% {
+      background-position: 285% -180%;
+  }
+  97% {
+      background-position: 290% -120%; /* New intermediate keyframe */
+  }
+  99% {
+      background-position: 295% -60%; /* New intermediate keyframe */
+  }
+  100% {
+      background-position: 300% 0%; /* Gradually aligns with the start */
+  }
+}

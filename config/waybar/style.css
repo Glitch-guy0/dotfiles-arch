@@ -4,122 +4,33 @@
   transition-timing-function: ease-in-out;
   font-size: large;
   font-weight: 900;
+  padding-top: 3px;
+  padding-bottom: 3px ;
 }
 
 window.root{
   background-color:transparent;
 }
 
-#clock {
-  background-color: #ffcad4;
-  border-radius: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-/* battery transition properties */
-#battery{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 30px;
-  background-color: #aafcb8
-}
-
-#battery.warning{
-  background-color: #f8961e;
-}
-#battery.critical{
-  background-color: #f94144;
-}
+@import url("./modules/clock.css");
 
 /* cpu usage transition properties */
-#cpu{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 30px;
-  background-color: #f4acb7;
-}
-
-#cpu.warning{
-  background-color: #f8961e;
-  
-}
-#cpu.critical{
-  background-color: #f9844a;
-}
-#cpu.insane{
-  background-color: #f94144;
-}
-
-/* end of cpu transitions */
+@import url("./modules/cpu.css");
 
 /* memory transitions */
-#memory{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 30px;
-  background-color: #d8e2dc;
-}
-#memory.heavy{
-  background-color: #f8961e;
-}
-#memory.warning{
-  background-color: #f9844a;
-}
-#memory.insane{
-  background-color: #f94144;
-}
+@import url("./modules/memory.css");
 
+/* volume control */
+@import url("./modules/audio.css");
 
 /* temperature transitions */
-#temperature{
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 30px;
-  background-color: #b8d8ba;
-}
+@import url("./modules/temperature.css");
 
-#temperature.warning{
-  background-color: #f8961e;
-}
-#temperature.insane{
-  background-color: #f94144;
-}
+/* battery transition properties */
+@import url("./modules/battery.css");
 
-
-/* mover / handler / knob */
-#pulseaudio-slider slider {
-  min-height: 25px;
-  min-width: 25px;
-  background-image: none;
-  background-color: #ffe9b6;
-  box-shadow: none;
-}
-/* slider thin line */
-#pulseaudio-slider trough {
-  border-radius: 50px;
-  min-width: 0px;
-  min-height: 25px;
-  box-shadow: none;
-  min-height: 0.1px;
-  background-color: #ddfef3;
-}
-/* Volume control */
-#pulseaudio-slider:hover{
-  min-width: 200px;
-}
-/* progress notifier */
-#pulseaudio-slider highlight {
-  border-radius: 50px;
-  background-color: #8fffa2;
-}
-
-
-
-/* cava config */
-#cava{
-  min-height: 13px;
-  min-width: 14px;
-  background-color: cornflowerblue;
-}
+/* additional warning animations  */
+@import url("./modules/keyframes/animation.css");
+@import url("./modules/keyframes/warning.css");
+@import url("./modules/keyframes/critical.css");
+@import url("./modules/keyframes/insane.css");
