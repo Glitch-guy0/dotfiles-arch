@@ -1,4 +1,4 @@
 
 exec-once = swww-daemon 
-exec-once = swww img -o eDP-1,HDMI-A-1 ~/.config/wallpapers/wallpaper.jpg --transition-type grow --transition-pos 0.8,1.0
+exec-once = ~/.config/hypr/scripts/changeWallpaper.bash
 exec-once = waybar &
