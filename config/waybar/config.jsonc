@@ -33,7 +33,7 @@
   },
 
   "memory":{
-    "format":" {used}%",
+    "format":"   {used}%",
     "states":{
       "heavy":50,
       "warning":65,
@@ -60,7 +60,7 @@
   },
 
   "cpu":{
-    "format": "<span color='purple'> </span>{usage}%",
+    "format": "   {usage}%",
     "states":{
       "warning": 60,
       "critical":80,
