@@ -32,8 +32,10 @@
     }
   },
 
+  // if font doesn't look nice use **jetbrainsfont**
+  // dont touch the spacing
   "memory":{
-    "format":"   {used}%",
+    "format":" {used}%",
     "states":{
       "heavy":50,
       "warning":65,
@@ -60,7 +62,7 @@
   },
 
   "cpu":{
-    "format": "   {usage}%",
+    "format": " {usage}%",
     "states":{
       "warning": 60,
       "critical":80,
