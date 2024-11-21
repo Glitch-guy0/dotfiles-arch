@@ -17,3 +17,6 @@ alias polkitagent="/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
 
 # starship
 eval "$(starship init bash)"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

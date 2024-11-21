@@ -61,7 +61,7 @@ animation: airFlow 30s ease infinite;
     rgba(255,110,120,1) 80%, 
     rgba(255,90,100,1) 100%);
 background-size: 300% 300%;
-animation: warning 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+animation: airFlow 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 }
 #cpu.critical{
@@ -73,7 +73,7 @@ animation: warning 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     rgba(255,198,55,1) 80%, 
     rgba(255,178,42,1) 100%);
 background-size: 300% 300%;
-animation: critical 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+animation: airFlow 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 
 }
 #cpu.insane{
@@ -85,5 +85,5 @@ animation: critical 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
     rgba(255,200,100,1) 80%, 
     rgba(255,170,85,1) 100%);
 background-size: 300% 300%;
-animation: insane 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+animation: airFlow 15s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }

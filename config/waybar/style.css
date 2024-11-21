@@ -29,8 +29,5 @@ window.root{
 /* battery transition properties */
 @import url("./modules/battery.css");
 
-/* additional warning animations  */
-@import url("./modules/keyframes/animation.css");
-@import url("./modules/keyframes/warning.css");
-@import url("./modules/keyframes/critical.css");
-@import url("./modules/keyframes/insane.css");
+/* enable / disable animation */
+@import url("./modules/keyframes/default.css");
