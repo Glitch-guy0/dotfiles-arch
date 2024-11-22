@@ -25,3 +25,4 @@ fi
 ## end of defaults
 
 alias hibernate="sudo systemctl hibernate"
+alias autoremove="-Rns $(pacman -Qtdq)"
