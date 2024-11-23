@@ -9,11 +9,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-PATH=$PATH:~/.local/binkt
+PATH=$PATH:~/.local/bin
 
-# polkit enabler for autherization for gui applications (polkit-gnome)
-alias polkitagent="/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
-
+alias codx="code -r ./ && exit"
 
 # starship
 eval "$(starship init bash)"
